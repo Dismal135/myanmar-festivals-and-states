@@ -35,7 +35,7 @@ export const MainContent = () => {
         <div className="flex flex-col gap-2">
       <Image src={'https://cdn.britannica.com/12/61412-050-A4FCE8CE/Ruins-pagodas-shrines-Buddhist-Myanmar-Pagan.jpg'} width={1200} height={1200} alt='myanmar' />        
         <p>Myanmar is a country in northwest Southeast Asia.</p>
-        <p>The country's capital city is Naypyidaw, and its largest city is Yangon (formerly Rangoon).</p>
+        <p>The country&rsquo;s capital city is Naypyidaw, and its largest city is Yangon (formerly Rangoon).</p>
         <Link href={'/about'} className="bg-slate-800 text-white p-2 w-fit bounce-link2">Read more...</Link>
       </div>
       </CarouselItem>
