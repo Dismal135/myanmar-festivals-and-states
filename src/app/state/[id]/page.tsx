@@ -1,11 +1,10 @@
 export default async function Page ({
-    searchParams,
-  }: {
-    searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-  }) {
-    const {id} = await searchParams
-
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const query = (await searchParams).id
     return (
-        <div>{id}</div>
+        <div> quey {query}</div>
     )
 };
