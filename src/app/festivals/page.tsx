@@ -4,7 +4,7 @@ import getFestivals from "../festivals"
 export default async function FestivalsPage () {
     const festivals = await getFestivals();
     return (
-        <div className="max-h-[80vh] px-2 flex flex-col gap-2">
+        <div className="max-h-[70vh] px-2 flex flex-col gap-2">
             {
                 festivals.map((festival) => (
                     <div key={festival.name} className="flex gap-2">
