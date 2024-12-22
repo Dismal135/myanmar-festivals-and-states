@@ -1,13 +1,13 @@
 'use server'
 
 import myMongoose from './dbConnection.js';
-import Festival from './festival.js';
+import CountryState from '../app/countryState.js';
 
-export default async function getFestivals() {
+export default async function fetchCountryStates() {
     try {
       await myMongoose(); // Ensure MongoDB is connected
-      const festivals = await Festival.find(); // Fetch all users
-      return festivals;
+      const countryStates = await CountryState.find(); // Fetch all users
+      return countryStates;
     } catch (error) {
       console.error("Error fetching users:", error);
       return [];

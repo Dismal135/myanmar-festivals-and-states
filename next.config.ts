@@ -1,9 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
-    domains: ['cdn.britannica.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.britannica.com',
+        pathname: '/**', // Allows any path under the domain
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/**', // Allows any path under the domain
+      },
+    ],
   },
 };
 

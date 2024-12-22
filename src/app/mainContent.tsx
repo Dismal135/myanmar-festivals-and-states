@@ -19,7 +19,7 @@ export const MainContent = () => {
         <p className="text-center">မြန်မာနိုင်ငံသည် အရှေ့တောင်အာရှ အနောက်မြောက်ဘက်တွင်ရှိသော နိုင်ငံဖြစ်သည်။</p>
         <p className="text-center">
         မြန်မာနိုင်ငံ၏ မြို့တော်မှာ နေပြည်တော်ဖြစ်ပြီး အကြီးဆုံးမြို့မှာ ရန်ကုန် (ယခင်ရန်ကုန်)၊</p>
-        <Link href={'/about'} className="bg-slate-800 text-white p-2 w-fit bounce-link2">ပြည်နယ်များ...</Link>
+        <Link href={'/state'} className="bg-slate-800 text-white p-2 w-fit bounce-link2">ပြည်နယ်များ...</Link>
       </div>
       <div className="flex flex-col gap-2">
         <Image alt='festival' src={festival} width={1200} height={1200} />
@@ -36,7 +36,7 @@ export const MainContent = () => {
       <Image src={'https://cdn.britannica.com/12/61412-050-A4FCE8CE/Ruins-pagodas-shrines-Buddhist-Myanmar-Pagan.jpg'} width={1200} height={1200} alt='myanmar' />        
         <p>Myanmar is a country in northwest Southeast Asia.</p>
         <p>The country&rsquo;s capital city is Naypyidaw, and its largest city is Yangon (formerly Rangoon).</p>
-        <Link href={'/about'} className="bg-slate-800 text-white p-2 w-fit bounce-link2">Read more...</Link>
+        <Link href={'/state'} className="bg-slate-800 text-white p-2 w-fit bounce-link2">Read more...</Link>
       </div>
       </CarouselItem>
     <CarouselItem>
