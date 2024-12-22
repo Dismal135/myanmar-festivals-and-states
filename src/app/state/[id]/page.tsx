@@ -1,5 +1,3 @@
-import getCountryState from "@/app/getCountryState";
-
 export default async function Page ({
     searchParams,
   }: {
