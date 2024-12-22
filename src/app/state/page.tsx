@@ -6,7 +6,7 @@ export default async function State() {
   const countryStates = await fetchCountryStates();
 
   return (
-    <main className="text-center flex flex-col gap-2 mt-[80px]">
+    <main className="text-center flex flex-col gap-2 mt-32">
         <div>
         <h1>Myanmar States</h1>
         <p>အုပ်ချုပ်ရေးအရ မြန်မာနိုင်ငံကို ပြည်နယ်ခုနစ်ခု၊ တိုင်းဒေသကြီးခုနစ်ခု ခွဲခြားထားသည်။</p>
