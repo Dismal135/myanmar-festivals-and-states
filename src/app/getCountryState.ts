@@ -3,7 +3,7 @@
 import CountryState from "./countryState";
 import myMongoose from "./dbConnection";
 
-const getCountryState = async (id: string) => {
+const getCountryState = async (id: string | string[] | undefined) => {
     try {
         await myMongoose()
         const state = await CountryState.findById(id)
