@@ -18,8 +18,7 @@ export default async function State() {
                 <Image src={state.url} alt="myanmar states" width={150} height={150} />
                 <h1>{state.name}</h1>
                 <Link href={{
-                  pathname: `/state/${encodeURIComponent(state.name)}`,
-                  query: {id: state.id}
+                  pathname: `/state/${state.name}`,
                 }} className="bg-slate-800 text-white p-[2px] w-fit mx-auto">အသေးစိတ်</Link>
             </div>
         ))
