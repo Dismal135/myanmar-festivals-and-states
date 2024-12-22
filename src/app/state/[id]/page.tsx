@@ -9,6 +9,10 @@ export default async function Page ({
     const id = (await searchParams).id
     const state = await getCountryState(id);
 
+    if (!state) {
+      return <div>Network Error!</div>
+    }
+
     return (
         <div className="h-[70vh] px-3 flex flex-col gap-2">
             <Image src={state.url} alt="myanmar people" width={150} height={150} />
