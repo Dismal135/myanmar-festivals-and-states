@@ -10,7 +10,6 @@ const getCountryState = async (id: string | string[] | undefined) => {
         return state
     }catch (error) {
         console.log("fail to getCountryState", error)
-        throw new Error
     }
 }
 
