@@ -1,5 +1,4 @@
 import getCountryState from "@/app/getCountryState";
-import Image from "next/image";
 
 export default async function Page ({
     searchParams,
