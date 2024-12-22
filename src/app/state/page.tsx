@@ -19,7 +19,7 @@ export default async function State() {
                 <h1>{state.name}</h1>
                 <Link href={{
                   pathname: `/state/${state.name}`,
-                  query: {id: "motherfucler"}
+                  query: {id: state.id}
                 }} className="bg-slate-800 text-white p-[2px] w-fit mx-auto">အသေးစိတ်</Link>
             </div>
         ))
