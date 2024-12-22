@@ -9,7 +9,8 @@ const getCountryState = async (id: string | string[] | undefined) => {
         const state = await CountryState.findById(id)
         return state
     }catch (error) {
-        console.log("fail to getCountryState", error)
+        console.log(error)
+        throw new Error
     }
 }
 
