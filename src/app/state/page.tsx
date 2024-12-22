@@ -5,10 +5,6 @@ import Link from "next/link";
 export default async function State() {
   const countryStates = await fetchCountryStates();
 
-  if (!countryStates) {
-    <div>Network error!</div>
-  }
-
   return (
     <main className="text-center flex flex-col gap-2 mt-[80px]">
         <div>
