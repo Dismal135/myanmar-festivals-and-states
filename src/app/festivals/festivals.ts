@@ -1,6 +1,6 @@
 'use server'
 
-import myMongoose from './dbConnection.js';
+import myMongoose from '../dbConnection.js';
 import Festival from './festival.js';
 
 export default async function getFestivals() {
@@ -9,7 +9,7 @@ export default async function getFestivals() {
       const festivals = await Festival.find(); // Fetch all users
       return festivals;
     } catch (error) {
-      console.error("Error fetching users:", error);
-      return [];
+      console.log(error)
+      throw new Error("cant get festivals")
     }
   }

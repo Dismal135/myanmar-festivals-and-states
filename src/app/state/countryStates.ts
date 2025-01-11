@@ -1,7 +1,7 @@
 'use server'
 
-import myMongoose from './dbConnection.js';
-import CountryState from '../app/countryState.js';
+import myMongoose from '../dbConnection.js';
+import CountryState from './countryState.js';
 
 export default async function fetchCountryStates() {
     try {

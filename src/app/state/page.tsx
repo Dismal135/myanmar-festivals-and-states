@@ -1,5 +1,5 @@
 import Image from "next/image";
-import fetchCountryStates from "../countryStates";
+import fetchCountryStates from "./countryStates";
 import Link from "next/link";
 
 export default async function State() {

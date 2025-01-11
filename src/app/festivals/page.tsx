@@ -1,5 +1,5 @@
 import Image from "next/image";
-import getFestivals from "../festivals"
+import getFestivals from "./festivals"
 
 export default async function FestivalsPage () {
     const festivals = await getFestivals();

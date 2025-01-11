@@ -1,7 +1,7 @@
 'use server'
 
-import CountryState from "./countryState";
-import myMongoose from "./dbConnection";
+import CountryState from "../countryState";
+import myMongoose from "../../dbConnection";
 
 const getCountryState = async (id: string | string[] | undefined) => {
     try {
